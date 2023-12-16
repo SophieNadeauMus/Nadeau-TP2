@@ -198,7 +198,7 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #ffd79a; 
 }
-caption {
+table caption {
     font-weight: bold;
     font-size: 1.2em;
     margin: 10px;
@@ -302,7 +302,6 @@ footer a {
 footer > p {
     font-size: 0.8em;
     font-style: italic;
-    color: #804f05;
     text-align: center;
 }
 #liens_footer {
