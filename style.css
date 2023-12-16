@@ -105,13 +105,19 @@ nav {
 /****************************************** Inscription ******************************************/
 /*style du formulaire de la section inscription centré*/
 form {
+    background-color:#fef1df;
     width: 95%;
     margin: 5px auto;
+    padding-top: 20px;
 }
 /*style du formulaire d'inscription*/
 fieldset {
-    background-color:#fef1df;
     border: 0;
+}
+/*style de la légende du formulaire*/
+legend {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 /*style de l'attribut text du formulaire*/
 input[type=text] {
@@ -122,30 +128,28 @@ input[type=text] {
     border-radius: 5px;
     box-shadow: 3px 3px 3px #cec2b1;
 }
+/*style des cases à cocher (checkbox)*/
+input[type=checkbox] {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
 /*style du menu déroulant*/
 #inscription select {
+    margin-top: 10px;
     margin-bottom: 40px;
     padding: 3px;
     border: 0;
     border-radius: 5px;
     box-shadow: 3px 3px 3px #cec2b1;
 }
-/*style des cases à cocher (checkbox)*/
-input[type=checkbox] {
-    margin-left: 10px;
-}
 /*style de l'attribut date du formulaire*/
 input[type=date] {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     padding: 3px;
     border: 0;
     border-radius: 5px;
     box-shadow: 3px 3px 3px #cec2b1;
-}
-/*style pour l'attribut date du formulaire*/
-label[for=date] {
-    font-weight: bold;
 }
 /*style de la zone de texte*/
 textarea {
@@ -172,6 +176,18 @@ input[type=submit] {
     -ms-transition: 1s;
     -o-transition: 1s;
 }
+/*style du label date du formulaire*/
+label[for=date] {
+    font-weight: bold;
+}
+/*style du label duree du formulaire*/
+label[for=duree] {
+    font-weight: bold;
+}
+/*style du label commentaire du formulaire*/
+label[for=commentaire] {
+    font-weight: bold;
+}
 /*style des paragraphes du formulaire*/
 #inscription p {
  margin-top: 30px;
@@ -192,12 +208,15 @@ th, td {
     border: 1px solid black;
     padding: 10px;
 }
+/*style des rangées paires du tableau*/
 tr:nth-child(even) {
    background-color: #fef1df; 
 }
+/*style des rangées impaires du tableau*/
 tr:nth-child(odd) {
     background-color: #ffd79a; 
 }
+/*style de la caption du tableau*/
 table caption {
     font-weight: bold;
     font-size: 1.2em;
@@ -218,7 +237,6 @@ table caption {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
 }
 /*taille des images*/
 #article img {
@@ -290,7 +308,6 @@ footer {
 /*style de la description du département avec flex-grow*/
 .infos_footer:nth-child(2) {
     flex-grow: 1;
-    text-align: justify;
     font-size: 0.8em;
 }
 /*style des liens*/

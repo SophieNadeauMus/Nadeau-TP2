@@ -57,10 +57,10 @@
     </section>
     <!--section inscription contenant le formulaire-->
     <section id="inscription">
+        <h2>Inscription</h2>
         <form action="traiter_form.php">
-            <caption>Inscription</caption>
             <fieldset>
-                <p>Vos reseignements</p>
+                <legend>Vos reseignements</legend>
                 <label for="prenom">Prénom:</label>
                 <input type="text" id="prenom" name="prenom">
                 <label for="nom">Nom:</label>
@@ -80,9 +80,9 @@
                 <input type="checkbox" id="batterie" name="batterie" value="batterie">
                 <label for="batterie">Batterie</label>
                 <input type="checkbox" id="ukulele" name="ukulele" value="ukulele">
-                <label for="ukulele">Ukulélé</label>
+                <label for="ukulele">Ukulélé</label> <br>
                 <!--Menu déroulant-->
-                <p>Durée de cours souhaitée:</p>
+                <label for="duree">Durée de cours souhaitée:</label> <br>
                 <select id="duree" name="duree">
                     <option value="trente">30 minutes</option>
                     <option value="quarante_cinq">45 minutes</option>
@@ -90,9 +90,9 @@
                 </select> <br>
                 <!--date-->
                 <label for="date">Date de début des cours:</label> <br>
-                <input type="date" name="date" id="date">
+                <input type="date" name="date" id="date"> <br>
                 <!--Zone de texte-->
-                <p>Questions ou commentaires?</p>
+                <label for="commentaire">Questions ou commentaires?</label> <br><br>
                 <textarea name="commentaire" cols="70" rows="10"></textarea> <br>
                 <input id="bouton_submit" type="submit" value="Soumettre" aria-label="Soumettre">
             </fieldset>
