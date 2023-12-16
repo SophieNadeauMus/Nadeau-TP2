@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <!--en-tête contenenant le logo, le titre principal et le menu-->
+    <header>  
+        <div id="logo">
+            <img src="images/logo.png" alt="logo école de musique">
+            <h1>École de musique Allegro</h1>
+        </div>
+        <!--Menu de navigation-->
+        <nav>
+            <div class="menu">
+                <a href="#accueil">Accueil</a>
+            </div>
+            <div class="menu">
+                <a href="#inscription">Inscription</a>
+            </div>
+            <div class="menu">
+                <a href="#tableau">Tarifs</a>
+            </div>
+            <div class="menu">
+                <a href="#article">Article</a>
+            </div>
+            <div class="menu">
+                <a href="#video">Vidéo</a>
+            </div>
+            <div class="menu">
+                <a href="#galerie_images">Galerie</a>
+            </div>
+            <div class="menu">
+                <a href="#footer">Contacts</a>
+            </div>
+        </nav>
+    </header>
+    <!--section accueil contenant les infos sur le travail, l'image d'accueil et le slogan-->
+    <section id="accueil">
+        <div id="infos_accueil">
+            <p>TP2</p>
+            <p>Sophie Nadeau</p>
+            <p>582-1W1 – Mise en page Web</p>
+            <p>Techniques d’Intégration Multimédia</p>
+            <p>Collège de Maisonneuve</p>
+            <a href="#">Github</a>
+            <p>Automne 2023</p>
+        </div>
+        <div id="image_accueil">
+            <h1>Votre école de quartier!</h1>
+            <img src="images/clavier.jpg" alt="clavier et écouteurs">
+        </div>
+    </section>
+    <!--section inscription contenant le formulaire-->
+    <section id="inscription">
+        <form action="traiter_form.php">
+            <h2>Inscription</h2>
+            <fieldset>
+                <p>Vos reseignements</p>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom"> <br>
+                <label for="telephone">Numéro de téléphone:</label>
+                <input type="text" id="telephone" name="telephone">
+                <label for="courriel">Adresse courriel:</label>
+                <input type="text" id="courriel" name="courriel">
+                <p>Instrument(s) qui vous intéresse?</p>
+                <!--Cases à cocher (input checkbox)-->
+                <input type="checkbox" id="piano" name="piano" value="piano">
+                <label for="piano">Piano</label>
+                <input type="checkbox" id="guitare" name="guitare" value="guitare">
+                <label for="guitare">Guitare</label>
+                <input type="checkbox" id="chant" name="chant" value="chant">
+                <label for="chant">Chant</label>
+                <input type="checkbox" id="batterie" name="batterie" value="batterie">
+                <label for="batterie">Batterie</label>
+                <input type="checkbox" id="ukulele" name="ukulele" value="ukulele">
+                <label for="ukulele">Ukulélé</label>
+                <!--Menu déroulant-->
+                <p>Durée de cours souhaitée:</p>
+                <select id="duree" name="duree">
+                    <option value="trente">30 minutes</option>
+                    <option value="quarante_cinq">45 minutes</option>
+                    <option value="soixante">60 minutes</option>
+                </select> <br>
+                <!--date-->
+                <label for="date">Date de début des cours:</label> <br>
+                <input type="date" name="date" id="date">
+                <!--Zone de texte-->
+                <p>Questions ou commentaires?</p>
+                <textarea name="commentaire" cols="70" rows="10"></textarea> <br>
+                <input id="bouton_submit" type="submit" value="Soumettre" aria-label="Soumettre">
+            </fieldset>
+        </form>
+    </section>
+    <!--section tableau contenant l'élément table-->
+    <section id="tableau">
+        <table>
+            <caption>Nos tarifs</caption>
+            <tr>
+                <th>Tarifs</th>
+                <th>30 minutes</th>
+                <th>45 minutes</th>
+                <th>60 minutes</th>
+            </tr>
+            <tr>
+                <td>Régulier</td>
+                <td>28$</td>
+                <td>38$</td>
+                <td>48$</td>
+            </tr>
+            <tr>
+                <td>Familial</td>
+                <td>26$</td>
+                <td>35$</td>
+                <td>45$</td>
+            </tr>
+            <tr>
+                <td>Ainés</td>
+                <td>25$</td>
+                <td>34$</td>
+                <td>43$</td>
+            </tr>
+            <tr>
+                <td>Régulier (4 cours)</td>
+                <td>112$</td>
+                <td>152$</td>
+                <td>192$</td>
+            </tr>
+            <tr>
+                <td>Familial (4 cours)</td>
+                <td>106$</td>
+                <td>144$</td>
+                <td>182$</td>
+            </tr>
+            <tr>
+                <td>Ainés (4 cours)</td>
+                <td>100$</td>
+                <td>136$</td>
+                <td>172$</td>
+            </tr>
+            <tr>
+                <td>Forfait 12 cours</td>
+                <td>308$</td>
+                <td>418$</td>
+                <td>528$</td>
+            </tr>
+        </table>
+    </section>
+    <!--section article-->
+    <section id="article">
+        <h2>Notre histoire</h2>
+        <div id="contenu">
+            <div class="paragraphe">
+                <h3>Les premiers balbutiements</h3>
+                <p>Étant déjà enseignante dans une école de musique, j’étais au fait des besoins des étudiants et je constatais qu’il y avait place à amélioration afin de mieux servir la clientèle. Je me suis donc mise à réfléchir à des solutions potentielles afin d’avoir un meilleur fonctionnement mais surtout d’offrir la meilleure expérience possible aux élèves. C’est alors que m’est venu l’idée de former ma propre école de musique afin de pouvoir offrir ma vision sur ce qu’est une institution digne de ce nom.</p>
+                <img src="images/lumiere.jpg" alt="ampoule">
+            </div>
+            <div class="paragraphe">
+                <h3>La réalisation</h3>
+                <p>Près de deux ans ont passé afin de mettre sur pied cette vision que j'avais en tête. J'ai rencontré de nombreux hauts et bas afin d'atteindre mon objectif mais j'ai surtout réalisée qu'il me serait impossible de réaliser un si gros projet toute seule. </p>
+                <p>En demandant l'aide de nombreux collaborateurs, la réalisation de l'école à enfin été possible et nous avont finalement pu ouvrir nos portes.</p>
+                <img src="images/open.jpg" alt="enseigne open">
+            </div>
+            <div class="paragraphe">
+                <h3>Aujourd'hui</h3>
+                <p>Maintenant cinq ans plus tard et près de 300 étudiants à notre actif, nous continuont à vous servir avec la même attention qu'à nos débuts. Nos enseignants dévoués continuent également à vous offrir un enseignement professionnel et adapté à vos besoins.</p>
+                <p>Pour les nouvaux arrivés, n'hésitez pas à consulter notre section inscription afin de voir les cours que nous offrons et de nous poser toutes intérogations que vous avez face aux cours de musique. Nous sommes là pour vous aider!</p>
+                <img src="images/ordinateur.jpg" alt="ordinateur portable">
+            </div>
+        </div>
+    </section>
+    <!--section vidéo contenant le titre de la section, le lien de la vidéo et le paragraphe explicatif-->
+    <section id="video">
+        <h2>Pour commencer votre apprentissage:</h2>
+        <div id="video_contenu">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rgaTLrZGlk0?si=t979RAqI4yqlbnOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="video_p">
+                <p>Pour apprendre à jouer d'un instrument, il est primordial de connaître les bases de la théorie musicale. Pour se faire, cette vidéo d'introduction vous aidera à faire les premiers pas dans votre apprentissage. Votre enseignant approfondira la matière lors de vos cours.</p>
+                <p>La pratique de ces concepts théoriques vous aidera à rendre l'apprentissage de votre instrument plus facile et agréable. Répétez-les souvent et surtout, laissez-vous du temps! Éventuellement, la théorie musicale deviendra une seconde nature. Vous serez donc en mesure de comprendre ce que vous faites à l'instrument plutôt que de simplement reproduire ce que vous voyez.</p>
+                <p>Bonne pratique!</p>
+            </div>
+        </div>
+    </section>
+    <!--section galerie d'images contenant les images-->
+    <section id="galerie_images">
+        <h2>Cours offets</h2>
+        <div id="images">
+            <div class="cours">
+                <img src="images/piano.jpg" alt="piano">
+                <h3>Piano</h3>
+            </div>
+            <div class="cours">
+                <img src="images/guitare.jpg" alt="guitare">
+                <h3>Guitare</h3>
+            </div>
+            <div class="cours">
+                <img src="images/chant.jpg" alt="microphone chanteuse">
+                <h3>Chant</h3>
+            </div>
+            <div class="cours">
+                <img src="images/batterie.jpg" alt="batterie">
+                <h3>Batterie</h3>
+            </div>
+            <div class="cours">
+                <img src="images/ukulele.jpg" alt="ukulele">
+                <h3>Ukulélé</h3>
+            </div>
+        </div>
+    </section>
+    <!--Section Footer contenant l'adresse du collège, la liste des réseau sociaux et la description du département-->
+    <footer id="footer">
+        <div id="conteneur_footer">
+            <!--Adresse du collège-->
+            <div class="infos_footer">
+                <div id="liens_footer">
+                    <a href="https://www.cmaisonneuve.qc.ca/"> Collège de Maisonneuve</a>
+                    <p>3800, rue Sherbrooke Est</p>
+                    <p>Montréal (Québec) H1X 2A2</p>
+                </div>
+                <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">Département de multimédia</a>
+            </div>
+            <!--Descrption du département-->
+            <div class="infos_footer">
+                <p>Le département d'intégration multimédia te permet de découvrir les différentes facettes de la création multimédia. Divisé en deux axes de formation principaux, soit la création de jeux vidéo et la programmation Web, le programme te permet de créer une multitude de projets regroupant différents medium numériques. Tu apprendras également à utiliser de nombreux logiciels dont la suite Adobe (Photoshop, After Effects, Premiere Pro), de 3D (Maya, Unity) ainsi que différents langages de programmation (HTML, CSS, Javascript, etc.)</p>  
+            </div>
+            <!--icones des réseaux sociaux-->
+            <div class="infos_footer">
+                <h3>Suivez-nous</h3>
+                <div id="icones">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+            </div> 
+        </div>
+            <p>© 2023 Sophie Nadeau - Avis de confidentialité</p> 
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+/*style de la page Web*/
+body {
+    background-color: #fee1b5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*taille de chaque section ajustée à la grandeur de l'écran*/
+section {
+    width: 100vw;
+    height: 100vh;
+}
+/*style des titres h2 des sections inscription, article, video et galerie_images*/
+h2 {
+    width: fit-content;
+    margin: 70px auto;
+    font-size: 2em;
+}
+/*style des titres h3 pour les sections article, galerie_images et footer*/
+h3 {
+    font-size: 1.5em;
+}
+/****************************************** Header ******************************************/
+/*style du header avec flexbox*/
+header {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*taille du logo*/
+header img {
+    margin-right: 10px;
+    width: 15%;  
+}
+/*style du logo et titre principal avec flexbox*/
+#logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*style du menu de navigation*/
+nav {
+    font-weight: bold;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+/*transition de retour sur le menu de navigation*/
+.menu {
+    transition: transform 0.5s;
+}
+/*style des liens de navigation*/
+.menu a{
+    font-size: 0.8em;
+    margin: 10px;
+    color: black; 
+}
+/*style de la navigation lorsque visités*/
+.menu a:visited {
+    color: #FFBD59;
+}
+/*style de la navigation lorsque surlvolée*/
+.menu:hover {
+    transform: scale(1.2,1.2);
+}
+/****************************************** Accueil ******************************************/ 
+/*infos de la section accueil stylisées avec flexbox*/
+#infos_accueil {
+    background-color: #FFBD59;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/*position de l'image et du titre d'accueil*/
+#image_accueil {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+/*grandeur de l'image d'accueil*/
+#accueil img {
+    width: 100vw;
+}
+/*style du titre d'accueil*/
+#image_accueil h1 {
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*style du lien Github*/
+#accueil a {
+    color: black;
+    transition: color 1s;
+    transition: color 0.2s;
+}
+/*transition du lien Github*/
+#accueil a:hover {
+    color: #fee1b5;
+    transition: color 0.2s;
+}
+/****************************************** Inscription ******************************************/
+/*style du formulaire de la section inscription centré*/
+form {
+    width: 95%;
+    margin: 5px auto;
+}
+/*style du formulaire d'inscription*/
+fieldset {
+    background-color:#fef1df;
+    border: 0;
+}
+/*style de l'attribut text du formulaire*/
+input[type=text] {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 3px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #cec2b1;
+}
+/*style du menu déroulant*/
+#inscription select {
+    margin-bottom: 40px;
+    padding: 3px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #cec2b1;
+}
+/*style des cases à cocher (checkbox)*/
+input[type=checkbox] {
+    margin-left: 10px;
+}
+/*style de l'attribut date du formulaire*/
+input[type=date] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #cec2b1;
+}
+/*style pour l'attribut date du formulaire*/
+label[for=date] {
+    font-weight: bold;
+}
+/*style de la zone de texte*/
+textarea {
+    padding: 3px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #cec2b1;  
+}
+/*style du bouton soumettre*/
+input[type=submit] {
+    margin: 20px 0 10px 0;
+    padding: 7px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #cec2b1;
+    transition: font-size 1s;
+}
+/*transtion de taille de police sur le bouton submit*/
+#bouton_submit:hover {
+    font-size: 1.5em;
+    transition: font-size 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+/*style des paragraphes du formulaire*/
+#inscription p {
+ margin-top: 30px;
+ margin-bottom: 10px;
+    font-weight: bold;
+}
+/****************************************** Tableau ******************************************/
+/*style de l'élément table contenant les tarifs*/
+table {
+    font-size: 1.5em;
+    margin: 0px auto;
+    margin-top: 100px;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 5px #c5ae8d;
+}
+/*ajout d'une bordure au tableau*/
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+tr:nth-child(even) {
+   background-color: #fef1df; 
+}
+tr:nth-child(odd) {
+    background-color: #ffd79a; 
+}
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px;
+}
+/****************************************** Article ******************************************/
+/*div contenu stylisant la seciton article avec flexbox*/
+#contenu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+/* style de chaque paragraphe centré avec flexbox*/
+.paragraphe {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+/*taille des images*/
+#article img {
+    width: 80%;
+}
+/****************************************** Video ******************************************/
+/* style de la section vidéo avec flexbox*/
+#video_contenu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/*style des paragraphes*/
+#video_p {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/****************************************** Galerie ******************************************/
+/*style de la section galerie_images avec flexbox*/
+#images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
+}
+/*taille des images de la section galerie_images*/
+.cours img {
+    width: 50%;
+}    
+/*alignement des chaque image avec son titre selon la technique flexbox*/
+.cours {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    transition: transform 0.5s;
+}
+/*transformation de chaque div lorsqu'on survole avec la souris*/
+.cours:hover {
+    transform: translate(50%, 50%) scale(3,3);
+}
+/****************************************** Footer ******************************************/
+/*style pour l'ensemble du footer*/
+footer {
+    background-color: #FFBD59;
+    padding: 5px;
+}
+/*syle du footer avec la technique flexbox*/
+#conteneur_footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/*style des sous sections avec flexbox*/
+.infos_footer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*style de la description du département avec flex-grow*/
+.infos_footer:nth-child(2) {
+    flex-grow: 1;
+    text-align: justify;
+    font-size: 0.8em;
+}
+/*style des liens*/
+footer a {
+    color: black;
+    font-weight: bold;
+}
+/*style de l'avis de confidentialité*/
+footer > p {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #804f05;
+    text-align: center;
+}
+#liens_footer {
+    margin: 20px 0;
+}
+/*style de la div icones centrée*/
+#icones {
+    width: fit-content;
+    text-align: center;
+}
+/*style des icones*/
+ion-icon {
+    margin: 0 10px;
+    font-size: 2em;
+    color: black;
+    transition: color 0.2s;
+}
+/*style des icones lorsque survolés*/
+ion-icon:hover {
+    color: #fee1b5;
+}
